@@ -1,13 +1,24 @@
 package curso.java.wyctor;
 
+import java.sql.Date;
+
 public class Pessoa {
 
 	private String nome;
 	private String sobrenome;
 	private int idade;
+	private Date dataNascimento;
 
 	public int getIdade() {
 		return idade;
+	}
+
+	public Date getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
 	public void setIdade(int idade) {
